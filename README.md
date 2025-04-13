@@ -1,1 +1,2 @@
-# clinex-for preveiw of larest items and cheap products
+# clinex-for preveiw of latest items at affordable price
+
