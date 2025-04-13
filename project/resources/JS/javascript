@@ -1,0 +1,29 @@
+
+// show_nav = document.querySelector('.menu');
+// nav = document.querySelector('aside');
+// close_nav = document.querySelector('.close_nav');
+
+
+// show_nav.addEventListener('click',()=>{
+//      nav.style.translate='0px';
+//      show_nav.style.visibility='hidden';
+// })
+
+// //
+// close_nav.addEventListener('click',()=>{
+//      nav.style.translate='-130%';
+//      show_nav.style.visibility='visible';
+// })
+
+// scroll animations
+window.onscroll = function(){
+        if(document.body.scrollTop > 50 || document.documentElement.scrollTop > 50){
+            document.querySelector('.top').style.background = '#001';
+            document.querySelector('.cart_count').style.color = 'red';
+        } else {
+            document.querySelector('.top').style.background = 'transparent';
+            document.querySelector('.cart_count').style.color = '#001';
+        }
+    
+       
+    }

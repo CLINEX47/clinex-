@@ -1,0 +1,18 @@
+header h2{
+    animation: moveup 3s ease-out;
+}
+.hero_text{
+    animation: slide_l 3s ease-in-out;
+}
+@keyframes moveup {
+    0%{
+        translate: 0px 2000px;
+        opacity: 0;
+    }
+    
+}
+@keyframes slide_l {
+    0%{
+        translate: -100% 0px;
+    }
+}

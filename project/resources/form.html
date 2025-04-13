@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --primary:#c7f9728f;
+            --secondary:#0d09094a;
+            --tertiary:#000;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .form_container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background:var(--primary);
+            
+        }
+        .form_container form{
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+            max-width: 450px;
+            gap: 10px;
+            padding: 10px;
+            border-radius: 6px;
+            background: transparent;
+            box-shadow: 0 0 5px 0 var(--secondary);
+            overflow: hidden;
+        }
+        .top{
+            background: var(--tertiary);
+            padding: 15px;
+            border-radius: 0 0 50px 50px;
+            text-align: center;
+            color: var(--primary);
+            margin: auto;
+            margin-left: -2.5%;
+            margin-top: -20px;
+            width: 105%;
+            margin-bottom: 15px;
+        }
+        .form_container input{
+            border: 1px solid burlywood;
+            border-radius: 4px;
+            padding: 8px;
+            background: transparent;
+        }
+        .form_container button{
+            color: blanchedalmond;
+            background: black;
+            border-radius: 4px;
+            border: 0;
+            padding: 10px;
+        }
+        a{
+            display: block;
+            font-size: 12px;
+            font-style: italic;
+            text-align: center;
+            text-decoration: none;
+        }
+       
+        
+    </style>
+</head>
+<body>
+    <section class="form_container">
+    <form action="">
+       <div class="top">PROFILE</div>
+       <label for="username">preferred username</label>
+         <input type="text" name="username" id="username" placeholder="enter your username" required>
+            <label for="password">password</label>
+            <input type="password" name="password" id="password" placeholder="enter your password" required>
+            <label for="confirm password">confirm password</label>
+            <input type="text" name="confirm password" id="confirm password" placeholder="confirm your password" required>
+            <label for="email">email</label>
+            <input type="email" name="email" id="email" placeholder="enter your email" required>
+            <label for="phone number">phone number</label>
+            <input type="tel" name="phone number" id="phone number" placeholder="enter your phone number" required>
+            <button type="submit">submit</button>
+            <a href=""><i>Forgot email</i></a>
+        </form>
+    </section>
+</body>
+</html>
